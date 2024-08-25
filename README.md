@@ -15,20 +15,24 @@
 ### Start the Server
 ```bash
 python simpleperf.py -s -p <port> -b <bind_address> -f <format>
+```
 
 ### Start the Client
 ```bash
 python simpleperf.py -c -I <server_ip> -p <port> -t <time> -f <format> -n <num> -i <interval> -P <parallel_connections>
+```
 
 ## Examples
 
 Run the server on 127.0.0.1 port 8088:
 ```bash
 python simpleperf.py -s -p 8088 -b 127.0.0.1 -f MB
+```
 
 Run the client for 20 seconds with 5-second intervals:
 ```bash
 python simpleperf.py -c -I 127.0.0.1 -p 8088 -t 20 -f MB -i 5
+```
 
 
 
